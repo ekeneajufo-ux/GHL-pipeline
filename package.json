@@ -1,0 +1,21 @@
+{
+  "name": "ghl-pipeline",
+  "version": "1.0.0",
+  "description": "GoHighLevel automation suite for PracticeRx Consulting",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "phase1": "node index.js --phase 1",
+    "phase2": "node index.js --phase 2",
+    "phase3": "node index.js --phase 3",
+    "phase4": "node index.js --phase 4",
+    "phase5": "node index.js --phase 5",
+    "phase6": "node index.js --phase 6"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.3.1",
+    "form-data": "^4.0.0"
+  }
+}
