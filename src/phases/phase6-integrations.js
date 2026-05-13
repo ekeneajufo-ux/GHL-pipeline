@@ -5,11 +5,11 @@ const { postForm } = require('../ghl-client');
 const { locationId, pdfDir } = require('../config');
 const { header, step, success, warn, error, report, manual } = require('../logger');
 
+// AI Workflow Optimization is a live virtual call service — no PDF to upload
 const PDF_FILES = [
   'PracticeRx_DPC_Practice_Launch_Teaser_Guide.pdf',
   'PracticeRx_DPC_Pediatric_Vaccine_Cost_Guide.pdf',
   'PracticeRx_Family_Medicine_DPC_Launch_Guide.pdf',
-  'PracticeRx_AI_Workflow_Optimization_Guide.pdf',
 ];
 
 async function uploadPDF(filename) {
@@ -62,6 +62,7 @@ async function run() {
   const summary = {
     phase: 6,
     status: uploaded.length === PDF_FILES.length ? 'COMPLETE' : 'PARTIAL',
+    // Note: AI Workflow Audit is a virtual call — no PDF needed
     integrations: {
       google_calendar: { status: 'manual_required', instructions: 'See printed steps above' },
       pdfs_uploaded: uploaded.length,

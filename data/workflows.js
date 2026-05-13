@@ -36,7 +36,7 @@ module.exports = [
     actions: [
       'If tag_vaccine_guide_purchased → Send email with Vaccine_Cost_Guide.pdf',
       'If tag_fm_guide_purchased → Send email with FM_DPC_Launch_Guide.pdf',
-      'If tag_ai_audit_purchased → Send email with AI_Workflow_Guide.pdf',
+      'If tag_ai_audit_purchased → Send email: calendar booking link for virtual AI Workflow Audit call (no PDF)',
       'Send email: Purchase Confirmation',
       'Remove tag: tag_nurture_active',
       'If subscription → Add tag: tag_subscriber',
